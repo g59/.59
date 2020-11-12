@@ -6,9 +6,6 @@ mergeable:
         must_exclude:
           regex: ^\[WIP\]
           message: This is work in progress. Do not merge yet.
-        must_include:
-          regex: ^(feat|docs|chore|fix|refactor|test|style|perf|build)(\([-._\w]+\))?:.+$
-          message: Semantic release conventions must be followed.
       - do: description
         must_exclude:
           regex: TBA
